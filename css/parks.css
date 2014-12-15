@@ -1,0 +1,136 @@
+/******
+Overall look and feel
+******/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body,td,th {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 1.5em;
+	color: #111A00;
+}
+body {
+	background-color: #AEC284;
+}
+
+h1,h4 { 
+	color: #111A00 ;
+}
+
+/******
+Link Styles
+******/
+a:link {
+	color: #455B15;
+	text-decoration: underline;
+}
+a:visited {
+	text-decoration: underline;
+	color: #455B15;
+}
+a:hover {
+	text-decoration: none;
+	color: #A5708F  ;
+	/*background: #4D1235 ;*/
+}
+a:active {
+	text-decoration: underline;
+	color: #72395A;
+}
+
+/*******
+Header
+*******/
+.header {
+	background-color: #718743;
+	/*padding: 10px 0 0 1em;*/
+	display: block;
+	width: 100%;
+	height: 2em;
+}
+
+.header h1 {
+	font-size: 1.6em;
+}
+
+/*******
+Footer
+*******/
+.footer {
+	display: inline-block;
+}
+footer address { 
+	clear: both; 
+	border-top: #FFC thin dotted; 
+	margin-top: 5px; 
+	padding-top: 5px; 
+	font-size: .5em;
+	text-align: center;
+}
+
+/*******
+Quote on Home page
+*******/
+.quote_div {
+	display: inline-block;
+	margin-top: 1em;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.quote_section {
+	display: inline-block;
+	padding: 30px;
+	background: #F2F7E6;
+	border: #455b15 thin dotted; 
+	margin: 0 20px;
+	overflow: hidden;
+	font-family: Georgia, Serif, sans-serif;
+	font-size: 0.8em;
+	font-style: italic;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+}
+
+#home-grid {
+	padding: 20px;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 600px){
+	/* Make h1 font size */
+	body {
+		font-size: 1.3em;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	/* Top background header row */
+	#topbg {
+		height: 45px;
+	}
+
+	.header {
+		padding: 0;
+		height: 2em;
+	}
+
+	.quote_section {
+		padding: 30px;
+		margin: 10px;
+	}
+
+	.quote_div {
+		/*display: inline-block;*/
+		margin-top: 10px;
+	}
+}

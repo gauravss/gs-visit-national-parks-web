@@ -1,0 +1,136 @@
+/* CSS specific to the Site Pages */
+#site-content-slider {
+    padding: 10px;
+}
+
+#site-content {
+    display: block;
+    background: #F2F7E6;
+    margin: 10px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+#site-content ~ p {
+    font-size: 0.8em;
+    color: #111A00;
+}
+
+/* Image Slider */
+@keyframes slidy {
+    0% { left: 0; }
+    20% { left: 0; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+div#slider {
+    overflow: hidden;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto 0 auto;
+    border: 5px solid #2f3036;
+}
+
+div#slider span {
+    text-align: center;
+    opacity: 0.5;
+    background-color: #111A00;
+}
+div#slider figure img {
+    width: 20%;
+    height: auto;
+}
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 10s slidy infinite;
+}
+
+/* Accordion */
+#accordion {
+    margin:0 auto;
+    width:100%;
+}
+
+#accordion ul {
+    margin:0;
+    padding:0;
+}
+
+ul#accordion > li {
+    list-style: none;
+    border:1px #efefef solid;
+}
+
+ul#accordion > li h2 {
+    margin:0;
+    padding:10px;
+    font-size:1em;
+    color:#ecf0f1;
+    border-bottom:1px #efefef solid;
+    background-color: #2f3036;
+}
+
+ul#accordion li > a {
+    text-decoration:none;
+}
+
+ul#accordion li .content {
+    height: 0;
+    overflow:hidden;
+}
+
+ul#accordion li .content:target {
+    height:auto;
+    border-bottom:1px #efefef solid;
+}
+
+ul#accordion li .content:after {
+    height:0;
+    overflow:hidden;
+}
+
+
+ul#accordion li .content:last-child {
+    border-bottom:none;
+}
+
+ul#accordion li .content p {
+    padding: 10px;
+    /*color:#ecf0f1;*/
+}
+
+ul#accordion li .content li {
+    padding: 0 0 0 10px;
+    list-style: circle;
+}
+
+ul#accordion li section {
+    font-size: 0.7em;
+    color: #111A00;
+}
+
+ul#accordion li .content ol {
+    list-style: decimal;
+}
+
+/* Media CSS Styles */
+@media screen and (max-width: 600px) {
+    #site-content {
+        margin: 15px 5px;
+    }
+
+}
